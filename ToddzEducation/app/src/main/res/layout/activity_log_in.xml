@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnlogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LogIn">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+       >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/toddzlogo"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="28dp"
+            >
+
+
+            <TextView
+                android:layout_width="132dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="Log-in"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:visibility="visible"
+                tools:ignore="HardcodedText,SpUsage" />
+
+            <TextView
+                android:layout_width="147dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="Email Address"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/grey"
+                android:fontFamily="@font/maven_pro_medium"
+                android:hint="Enter email address here"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:visibility="visible"
+                 />
+
+            <TextView
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="Password"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.5"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/grey"
+                android:drawableEnd="@drawable/passwordicon"
+                android:drawableRight="@drawable/passwordicon"
+                android:fontFamily="@font/maven_pro_medium"
+                android:hint="Enter Password here"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:textAlignment="textStart"
+                android:visibility="visible"
+                 />
+
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:alpha="0.7"
+                android:fontFamily="@font/maven_pro_medium"
+                android:minHeight="48dp"
+                android:text="Remember me"
+                android:visibility="visible"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="-33dp"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/forgot_password"
+                android:visibility="visible" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="29sp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/maven_pro_medium"
+                android:text="@string/login9"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                app:cornerRadius="32dp"
+                 />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
