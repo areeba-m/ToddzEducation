@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ADD8E6" /> <!-- light blue color when pressed -->
+    <corners android:radius="25dp"/>
+    <stroke android:width="4dp" android:color="@color/dark_blue" />
+</shape>

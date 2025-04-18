@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C1FBA4"
+        tools:context=".UploadActivity">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="422dp"
+            android:layout_height="90dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ExtraText">
+            android:contentDescription="@strings/back"
+
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:background="?android:selectableItemBackground"
+                android:contentDescription="@string/go_to_subjects_tab"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/quiz_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="72dp"
+                android:layout_toRightOf="@id/back_button"
+                android:fontFamily="@font/maven_pro"
+                android:gravity="center"
+                android:text="New Quiz"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="412dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:background="#C1FBA4"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/relativeLayout3">
+
+            <Button
+                android:id="@+id/btnPreview"
+                android:layout_width="wrap_content"
+                android:layout_height="68dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/button_background_preview"
+                android:fontFamily="@font/maven_pro"
+                android:text="Preview"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@drawable/button_background_save"
+                android:fontFamily="@font/maven_pro"
+                android:text="Save"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:layout_marginBottom="343dp"
+            android:background="#C1FBA4"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editTextQuestion"
+                android:layout_width="390dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_background"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/maven_pro"
+                android:hint="Write your question here..."
+                android:padding="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/editTextQuestion"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:spacing="10dp">
+
+                <Button
+                    android:id="@+id/buttonWriteHint"
+                    android:layout_width="150dp"
+                    android:layout_height="73dp"
+                    android:background="@drawable/button_background"
+                    android:drawableRight="@drawable/hint_icon"
+                    android:fontFamily="@font/maven_pro"
+                    android:padding="12dp"
+                    android:text="Write hint..."
+                    android:textColor="@color/black"
+                    android:layout_marginHorizontal="10dp"/>
+
+                <Button
+                    android:id="@+id/buttonAddPhoto"
+                    android:layout_width="156dp"
+                    android:layout_height="74dp"
+                    android:background="@drawable/button_background"
+                    android:drawableRight="@drawable/photo"
+                    android:fontFamily="@font/maven_pro"
+                    android:padding="12dp"
+                    android:text="Add photo"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="51dp"
+            android:background="#C1FBA4"
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+            app:layout_constraintVertical_bias="0.0">
+
+            <!-- Custom layout for Editable Radio Button Option 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextOption1"
+                    android:layout_width="0dp"
+                    android:layout_height="59dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/maven_pro"
+                    android:hint="Write Option 1"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle" />
+            </LinearLayout>
+
+            <!-- Repeat the above block for Option 2, 3, and 4, ensuring unique IDs -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextOption2"
+                    android:layout_width="0dp"
+                    android:layout_height="59dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/maven_pro"
+                    android:hint="Write Option 2"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextOption3"
+                    android:layout_width="0dp"
+                    android:layout_height="69dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/maven_pro"
+                    android:hint="Write Option 3"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextOption4"
+                    android:layout_width="0dp"
+                    android:layout_height="73dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/maven_pro"
+                    android:hint="Write Option 4"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    android:layout_marginVertical="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonOption4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:button="@null"
+                    android:drawableRight="?android:attr/listChoiceIndicatorSingle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C1FBA4"
+            android:padding="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0">
+
+            <Button
+                android:id="@+id/completeQuizButton"
+                android:layout_width="178dp"
+                android:layout_height="61dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/button_background"
+                android:padding="8dp"
+                android:text="Complete quiz"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/addQuestionButton"
+                android:layout_width="171dp"
+                android:layout_height="59dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_background"
+
+                android:padding="8dp"
+                android:text="Add question"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
