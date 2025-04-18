@@ -15,13 +15,19 @@ ToddzEducation is a frontend mobile application developed as a project for the H
 
 ### Screenshots
 
-![Log-in Screenshot](ToddzFigmaDesign/Log-in.png)
-![Sign-up Screenshot](ToddzFigmaDesign/Sign-up.png)
-![Subjects Screenshot](ToddzFigmaDesign/Subjects.png)
-![Quiz Map Screenshot](ToddzFigmaDesign/QuizMap.png)
-![Attempt Quiz Screenshot](ToddzFigmaDesign/AttemptQuizfromMap.png)
-![Quiz Result Screenshot](ToddzFigmaDesign/QuizResult.png)
-![QuizSolution Screenshot](ToddzFigmaDesign/QuizSolution.png)
-![Leaderboard Screenshot](ToddzFigmaDesign/Leaderboard.png)
-![Profile Screenshot](ToddzFigmaDesign/Profile.png)
-![Teacher Screenshot](ToddzFigmaDesign/TeacherUpload.png)
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+  <img src="ToddzFigmaDesign/Log-in.png" alt="Log-in Screenshot" width="22%" />
+  <img src="ToddzFigmaDesign/Sign-up.png" alt="Sign-up Screenshot" width="22%" />
+  <img src="ToddzFigmaDesign/Subjects.png" alt="Subjects Screenshot" width="22%" />
+  <img src="ToddzFigmaDesign/QuizMap.png" alt="Quiz Map Screenshot" width="22%" />
+
+  <img src="ToddzFigmaDesign/AttemptQuizfromMap.png" alt="Attempt Quiz Screenshot" width="22%" />
+  <img src="ToddzFigmaDesign/QuizResult.png" alt="Quiz Result Screenshot" width="22%" />
+  <img src="ToddzFigmaDesign/QuizSolution.png" alt="Quiz Solution Screenshot" width="22%" />
+  <img src="ToddzFigmaDesign/Leaderboard.png" alt="Leaderboard Screenshot" width="22%" />
+
+  <img src="ToddzFigmaDesign/Profile.png" alt="Profile Screenshot" width="22%" />
+  <img src="ToddzFigmaDesign/TeacherUpload.png" alt="Teacher Screenshot" width="22%" />
+
+</div>
